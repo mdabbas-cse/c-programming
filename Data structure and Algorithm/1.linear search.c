@@ -19,8 +19,10 @@ int linear_search(int arr[], int n, int x)
 int main(void)
 {
   int arr[] = {2, 3, 4, 10, 40};
-  int x = 10;
+  int x;
   int n = sizeof(arr) / sizeof(arr[0]);
+  printf("Enter the element to be searched: ");
+  scanf("%d", &x);
 
   // Function call
   int result = linear_search(arr, n, x);
